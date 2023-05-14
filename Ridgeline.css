@@ -1,0 +1,96 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    transition: background 1s;
+    height: 10vw;
+}
+
+#header:hover{
+    background: darkslategray;
+}
+
+a, ul{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    margin: 0;
+    margin-right: 3vw;
+}
+
+.tabs{
+    display: flex;
+    gap: 5vw;
+    height: 100%;
+    margin-left: 0;
+    transition: border 1s;
+}
+.tab{
+    transition: border 0.2s;
+}
+
+.tab:hover{
+    border-bottom: solid white;
+    border-width: 0.5vw;
+}
+
+li{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    position: relative;
+    left: 3vw;
+    font-weight: bold;
+    font-size: 3vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#body{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    animation-name: background;
+    /* animation-timing-function: ease-in-out; */
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+    /* animation-direction: alternate; */
+}
+
+@keyframes background{
+    0%{background: url('./media/Kitchen-extension-internal-view1.jpg'); background-size: cover; background-position: center;}
+    25%{background: url('./media/internal\ kitchen.jpg'); background-size: cover; background-position: center;}
+    50%{background: url('./media/extension\ window.webp'); background-size: cover; background-position: center;}
+    75%{background: url('./media/outside\ extension.jpg'); background-size: cover; background-position: center;}
+    100%{background: url('./media/housing\ estate.jpg'); background-size: cover; background-position: center;}
+}
+
+.statement{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+}
