@@ -70,7 +70,7 @@ li{
     width: 100%;
     text-align: center;
     animation-name: background;
-    /* animation-timing-function: ease-in-out; */
+    animation-timing-function: step-start;
     animation-iteration-count: infinite;
     animation-duration: 30s;
     /* animation-direction: alternate; */
@@ -81,7 +81,7 @@ li{
     25%{background: url('./media/internal\ kitchen.jpg'); background-size: cover; background-position: center;}
     50%{background: url('./media/extension\ window.webp'); background-size: cover; background-position: center;}
     75%{background: url('./media/outside\ extension.jpg'); background-size: cover; background-position: center;}
-    100%{background: url('./media/housing\ estate.jpg'); background-size: cover; background-position: center;}
+    100%{background: url('./media/kitchen-extension-internal.jpg'); background-size: cover; background-position: center;}
 }
 
 .statement{
