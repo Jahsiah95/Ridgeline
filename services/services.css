@@ -151,7 +151,6 @@ li{
 @media screen and (max-width: 700px){
     #header{
         height: 10vh;
-        /* background: darkslategray; */
     }
 
     .logo{
@@ -171,16 +170,14 @@ li{
         top: 10vh;
         bottom: 0;
         text-align: center;
-        /* height: 90vh; */
         animation: dropdown 0.5s forwards;
         width: 100%;
         gap: 0;
-        transition: height 0.5s;
     }
 
     @keyframes dropdown{
         from{height: 0;}
-        to{height: 90vh;}
+        to{height: 80vh;}
     }
 
     .tab{
