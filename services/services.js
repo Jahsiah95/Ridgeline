@@ -3,7 +3,6 @@ const dropdown = document.querySelector('.dropdown')
 dropdown.addEventListener('click', menu)
 
 const tabs = document.querySelector('.tabs');
-// const display = document.querySelector('.display');
 
 
 function menu(){
