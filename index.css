@@ -78,17 +78,19 @@ li{
     align-items: center;
     text-align: center;
     animation-name: background;
-    animation-timing-function: step-start;
+    animation-duration: 30s;    
+    animation-direction: normal;
+    animation-timing-function: steps(1, end);
     animation-iteration-count: infinite;
-    animation-duration: 30s;
 }
 
 @keyframes background{
-    0%{background: url('./media/Kitchen-extension-internal-view1.jpg'); background-size: cover; background-position: center;}
-    25%{background: url('./media/internal\ kitchen.jpg'); background-size: cover; background-position: center;}
-    50%{background: url('./media/extension\ window.webp'); background-size: cover; background-position: center;}
-    75%{background: url('./media/outside\ extension.jpg'); background-size: cover; background-position: center;}
-    100%{background: url('./media/kitchen-extension-internal.jpg'); background-size: cover; background-position: center;}
+    0%{background: url('./media/outside\ extension.jpg'); background-size: cover; background-position: center;}
+    20%{background: url('./media/house\ construcion.jpg'); background-size: cover; background-position: center;}
+    40%{background: url('./media/extension\ window.webp'); background-size: cover; background-position: center;}
+    60%{background: url('./media/housing\ estate.jpg'); background-size: cover; background-position: center;}
+    80%{background: url('./media/kitchen-extension-internal.jpg'); background-size: cover; background-position: center;}
+    100%{background: url('./media/extension\ scaffold.jpeg'); background-size: cover; background-position: top;}
 }
 
 .statement{
@@ -98,8 +100,8 @@ li{
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 3vw;
-    width: 67%;
+    font-size: 2vw;
+    width: 50%;
     /* text-shadow: 0px 0px 10px black; */
     cursor: default;
 }

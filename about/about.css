@@ -116,6 +116,7 @@ li{
 .img3{
     background: url('../media/internal\ kitchen.jpg');
     background-attachment: fixed;
+    background-position: center;
     width: 50%;
 }
 
@@ -221,6 +222,8 @@ li{
     }
 
     .img4{
+        background: url('../media/housing\ estate.jpg');
+        background-position: center;
         background-attachment: scroll;
     }
 
