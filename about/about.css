@@ -192,11 +192,6 @@ li{
         height: 40%;
     }
 
-    .img1,.img2,.img3,.img4{
-        width: 100%;
-        height: 50vw;
-    }
-
     .para{
         width: 70%;
         min-height: 50vw;
@@ -206,6 +201,27 @@ li{
     .img1,.img2,.img3,.img4{
         width: 100%;
         min-height: 50vh;
+    }
+
+
+    .img1{
+        background-attachment: scroll;
+
+    }
+
+    .img2{
+        background-attachment: local;
+    }
+
+
+    .img3{
+        background-attachment: scroll;
+        background-position: bottom left;
+        background-size: cover;
+    }
+
+    .img4{
+        background-attachment: scroll;
     }
 
 
