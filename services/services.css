@@ -157,8 +157,18 @@ li{
     align-items: center;
     color: white;
     min-height: 30vh;
+    padding: 5vw;
 }
 
+.socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social{
+    width: 2vw;
+}
 
 @media screen and (max-width: 700px){
     #header{
