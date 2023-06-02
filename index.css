@@ -99,7 +99,12 @@ li{
     align-items: center;
     color: white;
     font-size: 3vw;
-    padding: 10vw;
+    width: 67%;
+    transition: background 0.5s;
+}
+
+.statement:hover{
+    background: darkslategray;
 }
 
 @media screen and (max-width: 700px){
