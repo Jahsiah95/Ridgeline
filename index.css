@@ -100,11 +100,8 @@ li{
     color: white;
     font-size: 3vw;
     width: 67%;
-    transition: background 0.5s;
-}
-
-.statement:hover{
-    background: darkslategray;
+    /* text-shadow: 0px 0px 10px black; */
+    cursor: default;
 }
 
 @media screen and (max-width: 700px){

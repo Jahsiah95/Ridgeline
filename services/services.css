@@ -12,13 +12,17 @@ body{
 #header{
     position: absolute;
     width: 100%;
-    background: darkslategray;
+    /* background: darkslategray; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1;
-    transition: background 1s;
+    transition: background 0.5s;
     height: 10vw;
+}
+
+#header:hover{
+    background: darkslategray;
 }
 
 a, ul{
@@ -38,6 +42,7 @@ a, ul{
 }
 .tab{
     transition: border 0.2s;
+    /* text-shadow: 0px 0px 10px darkslategray; */
 }
 
 .tab:hover{
@@ -66,7 +71,7 @@ li{
 }
 
 #body{
-    padding-top: 10vw;
+    /* padding-top: 10vw; */
     width: 100%;
     min-height: 100%;
     display: flex;
@@ -74,71 +79,82 @@ li{
     align-items: center;
 }
 
-.tile{
-    display: flex;
-}
-
 #body > *{
     display: flex;
-    height: 25vw;
-    width: 80%;
-    margin: 5vw;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 25vw;
+    width: 100%;
     color: darkslategray;
-    border-top: solid darkslategray 1px;
-    border-left: solid darkslategray 4px;
     transition: 0.3s;
-}
-
-#body > *:hover{
-    background: darkslategray;
-    color: white;
-    /* border-bottom: solid brown 1px;
-    border-right: solid brown 1px; */
 }
 
 .img{
     background: white;
-    width: 50%;
-    margin-right: 16px;
+    width: 100%;
+    height: 50vw;
 }
 
 #imgSurvey{
     background: url('../media/structural-survey.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
+    background-attachment: fixed;
 }
 
 #imgCalcs{
     background: url('../media/calcs.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
-.rate{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
 
 #imgDraft{
-    background: url('../media/draft.png');
-    background-size: cover;
-    background-position: center;
+    background: url('../media/image.png');
+    background-size: contain;
+    background-position: bottom;
+    background-attachment: fixed;
 }
 
 .text{
     width: 50%;
-    padding: 1vw;
+    min-height: 30vw;
+    padding: 10vw;
+    font-size: 2vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-content: space-between;
+    /* transition: background 1s; */
 }
 
+/* .text:hover{
+    background: darkslategray;
+    color: white;
+} */
+
+/* .rate{
+    max-width: 100%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: flex;
+    justify-content: space-between;
+} */
+
 .enquire{
-    width: 30%;
+    width: 15vw;
+    height: 5vw;
     border: none;
-    background-color: lightgray;
+    background-color: rgba(211, 211, 211, 0.3);
+    color: darkslategray;
+    transition: background 0.5s;
+}
+
+.enquire:hover{
+    background: darkslategray;
+    color: white;
 }
 
 #footer{
@@ -148,6 +164,7 @@ li{
     justify-content: space-evenly;
     align-items: center;
     color: white;
+    min-height: 30vh;
 }
 
 
@@ -205,22 +222,50 @@ li{
         height: 40%;
     }
 
-    #body{
-        padding-top: 10vh;
-    }
-
     #body > *{
         flex-direction: column;
         height: fit-content;
     }
 
     .img{
-        height: 30vh;
+        background: white;
         width: 100%;
-        margin: 0;
+        height: 50vh;
+    }
+
+    #imgCalcs{
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+    
+    #imgDraft{
+        background-size: contain;
+        /* background-position: bottom; */
+        background-attachment: fixed;
+    }
+
+    #imgSurvey{
+        background-size: cover;
+        background-position: bottom;
+        background-attachment: fixed;
     }
 
     .text{
-        width: 100%;
+        width: 70%;
+        min-height: 30vw;
+        padding: 10vw;
+        font-size: 2vh;
     }
+
+    .enquire{
+        width: 15vh;
+        height: 5vh;
+    }
+
+    #footer{
+        min-height: 30vw;
+    }
+
 }
