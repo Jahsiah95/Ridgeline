@@ -16,13 +16,14 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 1;
-    transition: background 0.5s;
+    /* transition: background 0.5s; */
     height: 10vw;
-}
-
-#header:hover{
     background: darkslategray;
 }
+
+/* #header:hover{
+    background: darkslategray;
+} */
 
 a, ul{
     text-decoration: none;
@@ -83,7 +84,9 @@ li{
     text-align: center;
     min-height: 25vw;
     width: 100%;
-    color: darkslategray;
+    color: white;
+    background: darkslategray;
+    /* color: darkslategray; */
     transition: 0.3s;
 }
 
@@ -115,7 +118,7 @@ li{
     background-size: contain;
     background-position: bottom;
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 }
 
 .text{
@@ -127,6 +130,8 @@ li{
     flex-direction: column;
     justify-content: space-between;
     align-content: space-between;
+    background: darkslategray;
+    /* color: white; */
     /* transition: background 1s; */
 }
 
@@ -139,7 +144,8 @@ li{
     width: 15vw;
     height: 5vw;
     border: none;
-    background-color: rgba(211, 211, 211, 0.3);
+    /* background-color: rgba(211, 211, 211, 0.3); */
+    background-color: white;
     color: darkslategray;
     transition: background 0.5s;
 }

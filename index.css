@@ -70,7 +70,7 @@ li{
     align-items: center;
 }
 
-#body{
+#hero{
     height: 100%;
     width: 100%;
     display: flex;
@@ -93,17 +93,91 @@ li{
     100%{background: url('./media/extension\ scaffold.jpeg'); background-size: cover; background-position: top;}
 }
 
+
+#body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+    width: 100%;
+    background: darkslategray;
+}
+
+
+.para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+    width: 50%;
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+}
+
+.img1,.img2,.img3,.img4{
+    width: 100%;
+    min-height: 30vw;
+}
+
+.img1{
+    background: url('./media/extension\ window.webp');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    width: 50%;
+}
+
+.img2{
+    background: url('./media/internal\ steel.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: bottom;
+    width: 50%;
+}
+
+
+.img3{
+    background: url('./media/internal\ kitchen.jpg');
+    background-attachment: fixed;
+    background-position: center;
+}
+
 .statement{
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    background: darkslategray;
     font-size: 2vw;
     width: 50%;
     /* text-shadow: 0px 0px 10px black; */
     cursor: default;
+}
+
+#footer{
+    background-color: darkslategray;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    min-height: 30vh;
+    padding: 5vw;
+}
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social{
+    width: 2vw;
 }
 
 @media screen and (max-width: 700px){

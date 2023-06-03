@@ -17,12 +17,12 @@ body{
     align-items: center;
     z-index: 1;
     height: 10vw;
-    transition: background 0.5s;
+    /* transition: background 0.5s; */
 }
-
+/* 
 #header:hover{
     background: darkslategray;
-}
+} */
 
 a, ul{
     text-decoration: none;
