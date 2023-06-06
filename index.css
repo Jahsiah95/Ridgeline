@@ -153,6 +153,26 @@ li{
     background: url('./media/internal\ kitchen.jpg');
     background-attachment: fixed;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicesCallout{
+    background: darkslategray;
+    width: 50%;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    font-weight: bold;
+    transition: background 0.5s;
+}
+
+.servicesCallout:hover{
+    background: white;
+    color: darkslategray;
 }
 
 .statement{
