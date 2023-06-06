@@ -17,7 +17,7 @@ body{
 }
 
 #header{
-    position: fixed;
+    position: absolute;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -101,7 +101,6 @@ li{
     80%{background: url('./media/kitchen-extension-internal.jpg'); background-size: cover; background-position: center;}
     100%{background: url('./media/extension\ scaffold.jpeg'); background-size: cover; background-position: top;}
 }
-
 
 #body{
     display: flex;
