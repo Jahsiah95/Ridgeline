@@ -16,14 +16,34 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 1;
-    /* transition: background 0.5s; */
+    transition: background 0.5s;
     height: 10vw;
+    /* background: darkslategray; */
+}
+
+#header:hover{
     background: darkslategray;
 }
 
-/* #header:hover{
+#thumbnail{
+    position: fixed;
+    top: 20vw;
     background: darkslategray;
-} */
+    padding-bottom: 2vw;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.5vw;
+}
+
+#thumbnail{
+    /* margin-top: 10px; */
+}
+
+h6{
+   margin-bottom: 0; 
+}
 
 a, ul{
     text-decoration: none;
@@ -113,7 +133,7 @@ li{
 }
 
 
-#imgDraft{
+#imgDrafting{
     background: url('../media/image.png');
     background-size: contain;
     background-position: bottom;
@@ -131,6 +151,7 @@ li{
     justify-content: space-between;
     align-content: space-between;
     background: darkslategray;
+    cursor: default;
     /* color: white; */
     /* transition: background 1s; */
 }
