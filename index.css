@@ -1,7 +1,13 @@
+@font-face {
+    font-family: Futura;
+    src: url(../media/Fonts/Futura\ Book\ font.ttf);
+}
+
 html{
     margin: 0;
     width: 100%;
     height: 100%;
+    font-family: Futura;
 }
 
 body{
@@ -22,7 +28,7 @@ body{
 }
 
 #header:hover{
-    background: darkslategray;
+    background: rgba(47, 79, 79, 0.8);
 }
 
 a, ul{
@@ -44,6 +50,8 @@ a, ul{
 .tab{
     transition: border 0.2s;
     font-size: 1.5vw;
+    font-weight: bold;
+    letter-spacing: 0.1vw;
 }
 
 .dropdown{
@@ -63,7 +71,7 @@ li{
 
 .logo{
     position: relative;
-    left: 1vw;
+    left: 1.5vw;
     font-weight: bold;
     font-size: 3vw;
     height: 70%;
