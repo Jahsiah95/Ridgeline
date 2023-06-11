@@ -17,18 +17,19 @@ body{
 }
 
 #header{
-    position: fixed;
+    position: absolute;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1;
+    background: #2e2d2c7f;
     transition: background 0.5s;
-    height: 5vw;
+    height: 10vw;
 }
 
 #header:hover{
-    background: rgba(47, 79, 79, 0.8);
+    /* background: ; */
 }
 
 a, ul{
@@ -41,32 +42,40 @@ a, ul{
 
 .tabs{
     display: flex;
-    gap: 5vw;
+    gap: 0vw;
     height: 100%;
     margin-left: 0;
-    transition: border 1s;
 }
 
 .tab{
-    transition: border 0.2s;
+    display: flex;
     font-size: 1vw;
     font-weight: bold;
+    padding-left: 1vw;
+    padding-right: 1vw;
     letter-spacing: 0.1vw;
+    height: 100%;
+    transition: height 0.2s;
+}
+
+.tab:hover{
+    background: #f6f6f6;
+    color: #f7931e;
+    height: 120%;
 }
 
 .dropdown{
     display: none;
 }
 
-.tab:hover{
-    border-bottom: solid white;
-    border-width: 0.5vw;
-}
-
 li{
     height: 100%;
+    width: 100%;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    bottom: 2vw;
 }
 
 .logo{
@@ -74,7 +83,7 @@ li{
     left: 1.5vw;
     font-weight: bold;
     font-size: 3vw;
-    height: 70%;
+    height: 80%;
     display: flex;
     align-items: center;
 }
@@ -85,22 +94,53 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    animation-name: background;
-    animation-duration: 30s;    
-    animation-direction: normal;
-    animation-timing-function: steps(1, end);
-    animation-iteration-count: infinite;
+    background-size: cover;
+    background-position: center;
 }
 
-@keyframes background{
+@keyframes fade{
+    0%{opacity: 0%;}
+    30%{opacity: 100%;}
+    70%{opacity: 100%;}
+    100%{opacity: 0%;}
+}
+
+.heroText{
+    font-size: 6vw;
+    font-weight: bold;
+    letter-spacing: 0.3vw;
+    color: #f6f6f6;
+    align-self: flex-end;
+    margin-bottom: 5vw;
+    width: 100%;
+    margin-left: 3vw;
+}
+
+p{
+    margin: 0;
+}
+
+.adjective{
+    font-size: 4vw;
+    color: #f7931e;
+    background: #2e2d2c7f;
+    width: fit-content;
+}
+
+.phrase{
+    background: #2e2d2c7f;
+    width: fit-content;
+}
+
+
+/* @keyframes background{
     0%{background: url('./media/outside\ extension.jpg'); background-size: cover; background-position: center;}
     20%{background: url('./media/house\ construcion.jpg'); background-size: cover; background-position: center;}
     40%{background: url('./media/extension\ window.webp'); background-size: cover; background-position: center;}
     60%{background: url('./media/housing\ estate.jpg'); background-size: cover; background-position: center;}
     80%{background: url('./media/kitchen-extension-internal.jpg'); background-size: cover; background-position: center;}
     100%{background: url('./media/extension\ scaffold.jpeg'); background-size: cover; background-position: top;}
-}
+} */
 
 #body{
     display: flex;
@@ -108,7 +148,7 @@ li{
     align-items: center;
     min-height: 100%;
     width: 100%;
-    background: darkslategray;
+    background: #2e2d2c;
 }
 
 
@@ -158,7 +198,7 @@ li{
 }
 
 .servicesCallout{
-    background: darkslategray;
+    background: #2e2d2c;
     width: 50%;
     height: 10vw;
     display: flex;
@@ -170,25 +210,12 @@ li{
 }
 
 .servicesCallout:hover{
-    background: white;
-    color: darkslategray;
-}
-
-.statement{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: darkslategray;
-    font-size: 2vw;
-    width: 50%;
-    /* text-shadow: 0px 0px 10px black; */
-    cursor: default;
+    background: #f7931e;
+    color: white;
 }
 
 #footer{
-    background-color: darkslategray;
+    background-color: #2e2d2c;
     bottom: 0;
     max-width: 100%;
     display: flex;
