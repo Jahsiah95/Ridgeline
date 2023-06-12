@@ -98,7 +98,7 @@ li{
 
 .logo{
     position: relative;
-    left: 1vw;
+    left: 1.5vw;
     font-weight: bold;
     font-size: 3vw;
     height: 80%;
@@ -256,11 +256,14 @@ h1{
         text-align: center;
         height: 100%;
         width: 100%;
+        font-size: 2vh;
     }
 
     li{
         display: flex;
         justify-content: center;
+        align-items: center;
+        bottom: 0;
     }
 
     .dropdown{
@@ -271,6 +274,11 @@ h1{
 
     .icon{
         height: 40%;
+    }
+
+    #thumbnail{
+        top: 30vh;
+        font-size: 1.5vh;
     }
 
     #body > *{
@@ -307,16 +315,32 @@ h1{
         width: 70%;
         min-height: 30vw;
         padding: 10vw;
-        font-size: 2vh;
+        font-size: 2.5vh;
     }
 
     .enquire{
-        width: 15vh;
-        height: 5vh;
+        width: 30vh;
+        height: 10vh;
     }
 
     #footer{
-        min-height: 30vw;
+        flex-direction: column;
+        min-height: 30vh;
+        padding: 5vw;
+    }
+    
+    .socials{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 0px;
+    }
+    
+    .social{
+        width: 4vh;
     }
 
 }

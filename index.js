@@ -24,25 +24,29 @@ const photoArray = [
     './media/kitchen-extension-internal.jpg',
     './media/extension\ scaffold.jpeg'
 ]
-const adjArray = ['INTEGRITY','TRANSPARENCY','HONESTY','RESPECT','CARE','EXCELLENCE']
+
+const adjArray = ['INTEGRITY','TRANSPARENCY','HONESTY','EXPERIENCE','CARE','EXCELLENCE']
 let i = 0;
 
 hero.style.backgroundImage = `url('${photoArray[photoArray.length-1]}')`
 adjective.textContent = adjArray[adjArray.length-1]
+hero.style.animation = 'fade 5s infinite';
 
 slideshow()
 
 function slideshow(){
-    setTimeout(function(){
-        adjective.textContent = adjArray[i];
-        // hero.style.animation = 'fade 5s infinite'
-        hero.style.backgroundImage = `url('${photoArray[i]}')`
-        i++;
-        if(i < adjArray.length){
-            slideshow();            
-        } else{
-            i = 0
-            slideshow()
-        }
-    }, 5000)
+    setTimeout(photos, 5000)
+}
+
+function photos(){
+    adjective.textContent = adjArray[i];
+    hero.style.animation = 'fade 5s infinite'
+    hero.style.backgroundImage = `url('${photoArray[i]}')`
+    i++;
+    if(i < adjArray.length){
+        slideshow();            
+    } else{
+        i = 0;
+        slideshow();
+    }
 }
