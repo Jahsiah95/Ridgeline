@@ -160,8 +160,8 @@ p{
 @keyframes swipe{
     0%{left: 100%;}
     10%{left: 0%;}
-    85%{right: 0%;}
-    100%{right: 50%;}
+    80%{right: 0%;}
+    100%{right: 100%;}
 }
 
 .phrase{
