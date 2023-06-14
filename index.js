@@ -33,7 +33,6 @@ currentImg.style.backgroundImage = `url('${photoArray[photoArray.length-1]}')`
 
 nextImg.style.animation = 'fade 7s ease-out infinite';
 
-
 adjective.textContent = adjArray[adjArray.length-1]
 adjective.style.animation = 'swipe 7s ease-out infinite';
 
@@ -46,8 +45,10 @@ function slideshow(){
 
 function next(){
     adjective.textContent = adjArray[i];
-
+    adjective.style.animation = 'swipe 7s ease-out infinite';
+    
     nextImg.style.backgroundImage = `url('${photoArray[i]}')`;
+    nextImg.style.animation = 'fade 7s ease-out infinite';
 
     i++;
 

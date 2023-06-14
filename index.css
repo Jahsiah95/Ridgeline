@@ -103,9 +103,6 @@ li{
     height: 100%;
     width: 100%;
     position: absolute;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     background-size: cover;
     background-position: center;
     /* z-index: 0; */
@@ -115,9 +112,6 @@ li{
     height: 100%;
     width: 100%;
     position: absolute;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     background-size: cover;
     background-position: center;
     z-index: 0;
@@ -141,7 +135,7 @@ li{
     margin-bottom: 5vw;
     width: 100%;
     margin-left: 3vw;
-    z-index: 1;
+    z-index: 0;
 }
 
 p{
