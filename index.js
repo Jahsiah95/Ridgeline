@@ -68,5 +68,5 @@ function current(){
         }else{
             currentImg.style.backgroundImage = `url('${photoArray[photoArray.length-1]}')`
         }
-    }, 7000)
+    }, 10000)
 }
