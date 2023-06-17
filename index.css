@@ -42,7 +42,6 @@ a, ul{
 
 .tabs{
     display: flex;
-    gap: 0vw;
     height: 100%;
     margin: 0;
 }
