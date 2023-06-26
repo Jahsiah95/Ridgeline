@@ -53,6 +53,7 @@ body{
     margin-left: 3vw;
     color: #f6f6f6;
     background: #2e2d2c7f;
+    cursor: default;
 }
 
 .dot{
@@ -136,7 +137,8 @@ a, ul{
 }
 
 .tab:hover{
-    background: #f6f6f6;
+    /* background: #f6f6f6; */
+    background: lightgray;    
     color: #f7931e;
     height: 120%;
 }
