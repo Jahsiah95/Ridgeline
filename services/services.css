@@ -304,6 +304,7 @@ h1{
     display: flex;
     justify-content:space-evenly;
     /* gap: 1vw; */
+    display: none;
 }
 
 .social{
