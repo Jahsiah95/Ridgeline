@@ -39,7 +39,8 @@ body{
     align-items: center;
     background-image: url('../media/Stock-image');
     background-size: cover;
-    filter: brightness(40%);
+    background-position: center;
+    filter: brightness(50%);
 }
 
 .heroText{
@@ -132,11 +133,247 @@ li{
 
 #body{
     position: relative;
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    min-height: 100%;
     background: #2e2d2c;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     color: white;
+    /* padding: 5%; */
+    border-top: solid #f7931e;
+}
+
+.vacancy{
+    display: flex;
+    gap: 5vw;
+    flex-grow: inherit;
+    min-height: fit-content;
+    padding: 5%;
+    border-bottom: 1px solid #f7931e;
+    width: 100%;
+    margin: 5%;
+    color: #f6f6f6;
+    background: #f6f6f6;
+    box-shadow: 1vw 1vw #f7931e;
+}
+
+#searchbar{
+    width: 50%;
+    height: 5vw;
+    color: #2e2d2c;
+    font-size: 2vw;
+    margin: 5%;
+    padding-left: 1vw;
+    box-shadow: 1vw 1vw #f7931e;
+}
+
+/* .vacancy{
+    margin-bottom: 0;
+    margin-top: 10vw;
+    font-size: 6vw;
+    color: #2e2d2c;
+    letter-spacing: 0.3vw;
+    background: #f6f6f6;
+    box-shadow: 1vw 0.5vw #f7931e;
+    padding: 1vw;
+} */
+
+.text{
+    width: 100%;
+    height: 100%;
+    min-height: fit-content;
+    font-size: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+    color: #2e2d2c;
+}
+
+h1{
+    color: #f7931e;
+    letter-spacing: 0.1vw;
+}
+
+.enquire{
+    width: 30%;
+    min-height: 100%;
+    border: none;
+    background-color: #2e2d2c;
+    color: #f6f6f6;
+    font-size: 1vw;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s;
+}
+
+.enquire:hover{
+    background: #f7931e;
+    color: white;
+}
+
+#footer{
+    position: relative;
+    background-color: #2e2d2c;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: white;
+    min-height: 30vh;
+    padding: 5vw;
+    gap: 5vw;
+    border-top: solid #f7931e;
+    border-width: 50%;
+}
+
+.socials{
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    /* gap: 1vw; */
+}
+
+.social{
+    width: 4vw;
+}
+
+@media screen and (max-width: 800px){
+    #header{
+        height: 10vh;
+    }
+
+    .logo{
+        font-size: 3vh;
+    }
+
+    #display{
+        display: flex;
+    }
+
+    .tabs{
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        top: 10vh;
+        bottom: 0;
+        text-align: center;
+        animation: dropdown 0.5s forwards;
+        width: 100%;
+        gap: 0;
+    }
+
+    @keyframes dropdown{
+        from{height: 0;}
+        to{height: 80vh;}
+    }
+
+    .tab{
+        background-color: #2e2d2c;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        font-size: 2vh;
+        justify-content: center;
+    }
+
+    .tab:hover{
+        height: 100%;
+    }
+
+    li{
+        display: flex;
+        /* justify-content: center; */
+        width: 100%;
+        align-items: center;
+        bottom: 0;
+    }
+
+    .dropdown{
+        padding: 0;
+        display: flex;
+        height: 100%;
+    }
+
+    .icon{
+        height: 40%;
+    }
+
+    #thumbnail{
+        top: 30vh;
+        font-size: 1.5vh;
+    }
+
+    .vacancy{
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+    }
+
+    .img{
+        background: white;
+        width: 100%;
+        height: 50vh;
+    }
+
+    #imgCalcs{
+        background-size: cover;
+        background-position: center;
+        /* background-attachment: scroll; */
+    }
+    
+    
+    #imgDraft{
+        background-size: contain;
+        /* background-position: bottom; */
+        /* background-attachment: scroll; */
+    }
+
+    #imgSurvey{
+        background-size: cover;
+        background-position: bottom;
+        /* background-attachment: scroll; */
+    }
+
+    #searchbar{
+        width: 100%;
+        height: 5vh;
+    }
+
+    .text{
+        width: 100%;
+        min-height: 30vw;
+        font-size: 2.5vh;
+    }
+
+    .enquire{
+        width: 100%;
+        height: 10vh;
+        font-size: 2vh;
+    }
+
+    #footer{
+        flex-direction: column;
+        min-height: 30vh;
+        padding: 5vw;
+    }
+    
+    .socials{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 0px;
+    }
+    
+    .social{
+        width: 4vh;
+    }
+
 }
