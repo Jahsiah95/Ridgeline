@@ -296,6 +296,7 @@ p{
 @media screen and (max-width: 800px){
     #header{
         height: 10vh;
+        position: fixed;
     }
 
     .logo{
