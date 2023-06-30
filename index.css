@@ -29,7 +29,7 @@ body{
 }
 
 #header:hover{
-    background: #2e2d2c7f;
+    background: #2e2d2c9f;
 }
 
 a, ul{
@@ -245,6 +245,8 @@ p{
     justify-content: center;
     align-items: center;
     width: 100%;
+    border-top: solid #f7931e;
+    border-bottom: solid #f7931e;
 }
 
 .servicesCallout{
@@ -277,15 +279,6 @@ p{
     min-height: fit-content;
     padding: 5vw;
     gap: 5vw;
-    border-top: solid #f7931e;
-}
-
-.emailIcon{
-    width: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
 }
 
 .socials{
