@@ -16,7 +16,7 @@ function menu(){
 
 //Enquiries
 function email(){
-    const link = 'mailto: daniel.marshall@ridgelinestructural.co.uk';
+    const link = 'mailto: info@ridgelinestructural.co.uk';
     window.location.href = link
 }
 
