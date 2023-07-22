@@ -21,8 +21,8 @@ const nextImg = document.querySelector('#nextImg');
 const photoArray = [
     './media/outside\ extension.jpg',
     './media/house\ construcion.jpg',
-    './media/extension\ window.webp',
-    './media/housing\ estate.jpg',
+    './media/S\ STEEL.jpg',
+    './media/brickwork.jpg',
     './media/kitchen-extension-internal.jpg',
     './media/extension\ scaffold.jpeg'
 ];

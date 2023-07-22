@@ -1,6 +1,12 @@
+@font-face {
+    font-family: Futura;
+    src: url(../media/Fonts/Futura\ Book\ font.ttf);
+}
+
 html{
     width: 100%;
     height: 100%;
+    font-family: Futura;
 }
 
 body{
@@ -10,23 +16,29 @@ body{
 }
 
 #header{
-    position: fixed;
+    position: absolute;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    z-index: 2;
+    box-shadow: 1vw 0.5vw 2vw #2e2d2c;
+    transition: background 0.4s;
     height: 10vw;
-    /* transition: background 0.5s; */
 }
-/* 
+
 #header:hover{
-    background: darkslategray;
-} */
+    background: #2e2d2c9f;
+}
+
+h6{
+   margin-bottom: 0;
+   cursor: default;
+   /* text-decoration: underline; */
+}
 
 a, ul{
     text-decoration: none;
-    color: white;
     list-style: none;
     margin: 0;
     margin-right: 3vw;
@@ -34,19 +46,31 @@ a, ul{
 
 .tabs{
     display: flex;
-    gap: 5vw;
     height: 100%;
-    margin-left: 0;
-    transition: border 1s;
+    margin: 0;
 }
 
 .tab{
-    transition: border 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    font-weight: bold;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-right: 3vw;
+    letter-spacing: 0.1vw;
+    height: 100%;
+    width: 100%;
+    transition: height 0.2s;
+    color: #f6f6f6;
 }
 
 .tab:hover{
-    border-bottom: solid white;
-    border-width: 0.5vw;
+    /* background: #f6f6f6; */
+    background: #f6f6f6;    
+    color: #f7931e;
+    height: 120%;
 }
 
 .dropdown{
@@ -55,102 +79,137 @@ a, ul{
 
 li{
     height: 100%;
+    width: 100%;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    bottom: 2vw;
 }
 
 .logo{
     position: relative;
-    left: 3vw;
+    left: 1.5vw;
     font-weight: bold;
     font-size: 3vw;
-    height: 100%;
+    height: 80%;
     display: flex;
     align-items: center;
+}
+
+.image{
+    background: url('../media/extension\ window.webp');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(60%);
 }
 
 #body{
+    position: relative;
+    /* width: 100%; */
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    min-height: 100%;
-    width: 100%;
+    color: white;
+    /* padding: 5%; */
+    /* border-top: solid #f7931e; */
 }
 
-.para{
+h1{
+    color: #f6f6f6;
+    letter-spacing: 0.1vw;
+    font-size: 6vw;
+    cursor: default;
+}
+
+.heroText{
+    position: absolute;
+    top: 50vh;
+    width: fit-content;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    margin: 0;
-    width: 50%;
+    align-items: flex-end;
+    font-size: 6vw;
+    letter-spacing: 0.3vw;
+    color: #f6f6f6;
+    background: #2e2d2c7f;
+    cursor: default;
+}
+
+.heading{
+    margin-left: 3vw;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.dot{
+    display: block;
+    margin-bottom: 1.45vw;
+    margin-left: 0.3vw;
+    background: #f7931e;
+    height: 0.7vw;
+    width: 0.7vw;
+}
+
+.details{
+    /* position: absolute; */
+    /* top: 50%; */
+    margin-top: 10%;
+    margin-right: 10%;
     text-align: center;
-    font-size: 2vw;
-    color: darkslategray;
-}
-
-.img1,.img2,.img3,.img4{
-    width: 100%;
-    min-height: 30vw;
-}
-
-.img1{
-    background: url('../media/extension\ scaffold.jpeg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: top;
-}
-
-.img2{
-    background: url('../media/internal\ steel.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    /* background-size: cover; */
-    background-position: center;
+    background-color: #f6f6f6;
+    box-shadow: 1vw 1vw #f7931e;
+    padding: 5vw;
     width: 50%;
 }
 
-
-.img3{
-    background: url('../media/internal\ kitchen.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    width: 50%;
+h3{
+    color: #f7931e;
+    cursor: default;
 }
 
-.img4{
-    background: url('../media/extension\ scaffold.jpeg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
+p{
+    color: #2e2d2c;
+    text-decoration: underline;
 }
 
 #footer{
-    background-color: darkslategray;
-    bottom: 0;
-    width: 100%;
+    position: relative;
+    background-color: #2e2d2c;
+    max-width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    text-align: center;
     color: white;
     min-height: 30vh;
     padding: 5vw;
+    gap: 5vw;
+    border-top: solid #f7931e;
+    border-width: 50%;
 }
 
 .socials{
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content:space-evenly;
+    /* gap: 1vw; */
+    display: none;
 }
 
 .social{
-    width: 2vw;
+    width: 4vw;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
     #header{
         height: 10vh;
+        position: fixed;
     }
 
     .logo{
@@ -181,15 +240,23 @@ li{
     }
 
     .tab{
-        background-color: darkslategray;
+        background-color: #2e2d2c;
         text-align: center;
+        align-items: center;
         height: 100%;
         width: 100%;
+        font-size: 2vh;
+    }
+
+    .tab:hover{
+        height: 100%;
     }
 
     li{
         display: flex;
         justify-content: center;
+        align-items: center;
+        bottom: 0;
     }
 
     .dropdown{
@@ -202,42 +269,40 @@ li{
         height: 40%;
     }
 
-    .para{
-        width: 70%;
-        min-height: 50vw;
-        font-size: 2vh;
+    .heroText{
+        align-self: center;
+        /* font-size: 8vh; */
     }
 
-    .img1,.img2,.img3,.img4{
-        width: 100%;
-        min-height: 50vh;
+    .details{
+        /* position: absolute;
+        top: 40vh; */
+        margin-right: 10%;
+        text-align: center;
+        background-color: #f6f6f6;
+        box-shadow: 1vw 1vw #f7931e;
+        padding: 5vw;
+        font-size: 2vw;
     }
-
-
-    .img1{
-        background-attachment: scroll;
-
-    }
-
-    .img2{
-        background-attachment: local;
-    }
-
-
-    .img3{
-        background-attachment: scroll;
-        background-position: bottom left;
-        background-size: cover;
-    }
-
-    .img4{
-        background: url('../media/housing\ estate.jpg');
-        background-position: center;
-        background-attachment: scroll;
-    }
-
-
+    
     #footer{
-        min-height: 30vw;
+        flex-direction: column;
+        min-height: 30vh;
+        padding: 5vw;
     }
+    
+    .socials{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 0px;
+    }
+    
+    .social{
+        width: 4vh;
+    }
+
 }

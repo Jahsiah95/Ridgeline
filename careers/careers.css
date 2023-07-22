@@ -23,12 +23,12 @@ body{
     align-items: center;
     z-index: 2;
     box-shadow: 1vw 0.5vw 2vw #2e2d2c;
-    transition: background 0.4s;
+    transition: background 0.2s;
     height: 10vw;
 }
 
 #header:hover{
-    background: #2e2d2c7f;
+    background: #2e2d2c9f;
 }
 
 #hero{
@@ -37,7 +37,7 @@ body{
     position: relative;
     display: flex;
     align-items: center;
-    background-image: url('../media/Stock-image');
+    background-image: url('../media/engineers.jpg');
     background-size: cover;
     background-position: center;
     filter: brightness(50%);

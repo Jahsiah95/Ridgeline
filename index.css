@@ -24,7 +24,7 @@ body{
     align-items: center;
     z-index: 2;
     box-shadow: 1vw 0.5vw 2vw #2e2d2c;
-    transition: background 0.4s;
+    transition: background 0.2s;
     height: 10vw;
 }
 
@@ -237,7 +237,7 @@ p{
 
 
 #img3{
-    background: url('./media/internal\ kitchen.jpg');
+    background: url('./media/S\ STEEL.jpg');
     background-attachment: fixed;
     background-attachment: -webkit-fixed;
     background-position: center;
