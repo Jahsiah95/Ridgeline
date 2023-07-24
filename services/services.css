@@ -295,8 +295,7 @@ h1{
     text-align: center;
     color: #f6f6f6;
     /* min-height: 30vh; */
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+    padding: 5vw;
     gap: 5vw;
     border-top: solid #f7931e;
 }
@@ -444,8 +443,7 @@ p > a{
 
     #footer{
         flex-direction: column;
-        padding-top: 5vh;
-        padding-bottom: 5vh;
+        padding: 5vh;
     }
     
     .socials{
