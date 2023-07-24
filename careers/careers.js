@@ -4,7 +4,6 @@ dropdown.addEventListener('click', menu);
 
 const tabs = document.querySelector('.tabs');
 
-
 function menu(){
     if(!tabs.getAttribute('id')){
         tabs.setAttribute('id','display')
@@ -15,25 +14,57 @@ function menu(){
 
 
 //Enquiries
-function email(){
-    const link = 'mailto: info@ridgelinestructural.co.uk';
-    window.location.href = link
-};
+let enquiries = (function(){
+    const enquiry = document.querySelectorAll('.enquire');
+    enquiry.forEach((enquiry) => enquiry.addEventListener('click', email))
 
-const enquiry = document.querySelectorAll('.enquire');
-enquiry.forEach((enquiry) => enquiry.addEventListener('click', email))
+    function email(){
+        const link = 'mailto: info@ridgelinestructural.co.uk';
+        window.location.href = link
+    };
+})();
+
+
+
 
 
 //searchbar
-const searchbar = document.querySelector('#searchbar');
-let vacancy = document.querySelectorAll('.vacancy')
-console.log(vacancy)
-let roles = []
-vacancy.forEach(vacancy => roles.push(vacancy.getAttribute('id')))
-console.log(roles)
+let searchbar = (function(){
+    const searchbar = document.querySelector('#searchbar');
+    const vacancy = document.querySelectorAll('.vacancy');
 
-function filter(){
-    let input = searchbar.value.toUpperCase();
-    console.log(input);
+    let roles = [];
     
-};
+    vacancy.forEach(vacancy => {
+        let role = vacancy.getAttribute('id');
+        roles.push(role.toUpperCase());
+    });
+    
+    searchbar.addEventListener('keyup', filter);
+    
+    function filter(){
+        let input = searchbar.value.toUpperCase();
+        let pos = [];
+
+        roles.forEach(role => {
+            pos.push(role.search(input))
+        })
+    
+        for(let i = 0; i < roles.length; i++){
+            if(pos[i] != -1){
+                vacancy[i].style.display = "";
+            } else{
+                vacancy[i].style.display = "none";
+            }
+        }
+    };
+    return {vacancy}
+})();
+
+let jobCount = (function(){
+    const text = document.querySelector('#jobCount')
+    let count = searchbar.vacancy.length
+    text.textContent = `We currently have [${count}] vacancies available`
+})();
+
+

@@ -23,11 +23,38 @@ function email(){
 const enquiry = document.querySelectorAll('.enquire');
 enquiry.forEach((enquiry) => enquiry.addEventListener('click',email))
 
-// enquiry.forEach((enquiry) => enquiry.addEventListener('mouseup', (e) => {
-//     e.target.style.background = 'lightgray'
-//     e.target.style.color = 'black'
+
+//Searchbar
+let searchbar = (function(){
+    const searchbar = document.querySelector('#searchbar');
+    const service = document.querySelectorAll('.service');
+
+    let services = [];
     
-// }))
+    service.forEach(service => {
+        let type = service.getAttribute('id');
+        services.push(type.toUpperCase());
+    });
+    
+    searchbar.addEventListener('keyup', filter);
+    
+    function filter(){
+        let input = searchbar.value.toUpperCase();
+        let pos = [];
+
+        services.forEach(service => {
+            pos.push(service.search(input))
+        })
+    
+        for(let i = 0; i < services.length; i++){
+            if(pos[i] != -1){
+                service[i].style.display = "";
+            } else{
+                service[i].style.display = "none";
+            }
+        }
+    };
+})();
 
 
 

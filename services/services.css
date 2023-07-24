@@ -174,7 +174,7 @@ li{
     border-top: solid #f7931e;
 }
 
-#body > *{
+.service{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -187,6 +187,21 @@ li{
     background: #f6f6f6;
     transition: 0.3s;
     box-shadow: 1vw 1vw #f7931e;
+}
+
+#searchbar{
+    width: 50%;
+    height: 5vw;
+    color: #2e2d2c;
+    margin: 5%;
+    font-size: 2vw;
+    padding-left: 1vw;
+    box-shadow: 1vw 1vw #f7931e;
+    padding-bottom: 0;
+    text-align: left;
+    position: relative;
+    left: 45%;
+    transform: translate(-45%, 0%);
 }
 
 .img{
@@ -212,16 +227,15 @@ li{
 
 #imgDrafting{
     background: url('../media/DESIGN\ SHEET\ STEEL.jpg');
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     -webkit-background-attachment: scroll;
     -moz-background-attachment: scroll;
     -o-background-attachment: scroll;
     background-attachment: scroll;
     background-position: bottom;
-    /* background-repeat: no-repeat; */
 }
 
 #imgSurvey{
@@ -241,16 +255,13 @@ li{
 .text{
     width: 80%;
     min-height: fit-content;
-    /* padding: 10vw; */
     font-size: 1.5vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-content: space-between;
-    /* background: #2e2d2c; */
     cursor: default;
     color: #2e2d2c;
-    /* transition: background 1s; */
 }
 
 h1{
@@ -258,16 +269,10 @@ h1{
     letter-spacing: 0.1vw;
 }
 
-/* .text:hover{
-    background: darkslategray;
-    color: white;
-} */
-
 .enquire{
     width: 15vw;
     height: 5vw;
     border: none;
-    /* background-color: rgba(211, 211, 211, 0.3); */
     background-color: #2e2d2c;
     color: #f6f6f6;
     transition: background 0.2s, color 0.2s;
@@ -292,6 +297,14 @@ h1{
     padding: 5vw;
     gap: 5vw;
     border-top: solid #f7931e;
+}
+
+p > a{
+    margin: 0;
+}
+
+.footerLogo{
+    height: 10vw;
 }
 
 .socials{
@@ -382,6 +395,14 @@ h1{
         width: 100%;
     }
 
+    #searchbar{
+        width: 100%;
+        height: 5vh;
+        left: 45%;
+        transform: translate(-50%);
+        font-size: 2vh;
+    }
+
     .img{
         background: white;
         width: 100%;
@@ -396,7 +417,7 @@ h1{
     
     
     #imgDraft{
-        background-size: contain;
+        background-size: cover;
         /* background-position: bottom; */
         /* background-attachment: scroll; */
     }
@@ -433,6 +454,7 @@ h1{
         justify-content: center;
         text-align: center;
         font-size: 0px;
+        display: none;
     }
     
     .social{

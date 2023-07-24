@@ -281,6 +281,14 @@ p{
     gap: 5vw;
 }
 
+p > a{
+    margin: 0;
+}
+
+.footerLogo{
+    height: 10vw;
+}
+
 .socials{
     width: 100%;
     display: flex;
@@ -405,6 +413,7 @@ p{
         justify-content: center;
         text-align: center;
         font-size: 0px;
+        display: none;
     }
     
     .social{
