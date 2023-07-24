@@ -6,6 +6,7 @@
 html{
     width: 100%;
     min-height: 100vh;
+    margin: 0;
     font-family: Futura;
 }
 
@@ -293,8 +294,9 @@ h1{
     align-items: center;
     text-align: center;
     color: #f6f6f6;
-    min-height: 30vh;
-    padding: 5vw;
+    /* min-height: 30vh; */
+    padding-top: 5vw;
+    padding-bottom: 5vw;
     gap: 5vw;
     border-top: solid #f7931e;
 }
@@ -442,8 +444,8 @@ p > a{
 
     #footer{
         flex-direction: column;
-        min-height: 30vh;
-        padding: 5vw;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
     }
     
     .socials{
