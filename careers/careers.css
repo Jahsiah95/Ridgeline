@@ -13,7 +13,7 @@ body{
     width: 100%;
     /* height: 100vh; */
     margin: 0;
-    background-color: #2e2d2c;
+    background-color: #f7931e;
 }
 
 #header{
@@ -310,6 +310,18 @@ p > a{
         height: 40%;
     }
 
+    .heroText{
+        font-size: 6vh;
+    }
+
+    .dot{
+        margin-bottom: 1.45vh;
+        margin-left: 0.3vh;
+        background: #f7931e;
+        height: 0.7vh;
+        width: 0.7vh;
+    }
+
     #thumbnail{
         top: 30vh;
         font-size: 1.5vh;
@@ -319,31 +331,6 @@ p > a{
         flex-direction: column;
         height: fit-content;
         width: 100%;
-    }
-
-    .img{
-        background: white;
-        width: 100%;
-        height: 50vh;
-    }
-
-    #imgCalcs{
-        background-size: cover;
-        background-position: center;
-        /* background-attachment: scroll; */
-    }
-    
-    
-    #imgDraft{
-        background-size: contain;
-        /* background-position: bottom; */
-        /* background-attachment: scroll; */
-    }
-
-    #imgSurvey{
-        background-size: cover;
-        background-position: bottom;
-        /* background-attachment: scroll; */
     }
 
     #searchbar{

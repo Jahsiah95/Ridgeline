@@ -8,12 +8,13 @@ html{
     min-height: 100vh;
     margin: 0;
     font-family: Futura;
+    background: #f7931e;
 }
 
 body{
     width: 100%;
     margin: 0;
-    background: #2e2d2c;
+    /* background: #f7931e; */
 }
 
 #header{
@@ -334,6 +335,18 @@ p > a{
         display: flex;
     }
 
+    .heroText{
+        font-size: 6vh;
+    }
+
+    .dot{
+        margin-bottom: 1.45vh;
+        margin-left: 0.3vh;
+        background: #f7931e;
+        height: 0.7vh;
+        width: 0.7vh;
+    }
+
     .tabs{
         display: none;
         position: absolute;
@@ -405,35 +418,16 @@ p > a{
     }
 
     .img{
-        background: white;
-        width: 100%;
-        height: 50vh;
-    }
-
-    #imgCalcs{
-        background-size: cover;
-        background-position: center;
-        /* background-attachment: scroll; */
-    }
-    
-    
-    #imgDraft{
-        background-size: cover;
-        /* background-position: bottom; */
-        /* background-attachment: scroll; */
-    }
-
-    #imgSurvey{
-        background-size: cover;
-        background-position: bottom;
-        /* background-attachment: scroll; */
+        display: none;
     }
 
     .text{
         width: 70%;
-        min-height: 30vw;
-        padding: 10vw;
         font-size: 2.5vh;
+    }
+
+    .text > p{
+        margin-bottom: 5vh;
     }
 
     .enquire{
