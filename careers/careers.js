@@ -15,8 +15,8 @@ function menu(){
 
 //Enquiries
 let enquiries = (function(){
-    const enquiry = document.querySelectorAll('.enquire');
-    enquiry.forEach((enquiry) => enquiry.addEventListener('click', email))
+    const apply = document.querySelectorAll('.apply');
+    apply.forEach((application) => application.addEventListener('click', email))
 
     function email(){
         const link = 'mailto: info@ridgelinestructural.co.uk';
