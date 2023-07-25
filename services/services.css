@@ -171,6 +171,7 @@ li{
     position: relative;
     width: 100%;
     height: 100%;
+    background: #2e2d2c;
     /* z-index: -1; */
     border-top: solid #f7931e;
 }
