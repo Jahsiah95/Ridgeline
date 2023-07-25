@@ -8,13 +8,12 @@ html{
     min-height: 100vh;
     margin: 0;
     font-family: Futura;
-    background: #f7931e;
 }
 
 body{
     width: 100%;
     margin: 0;
-    /* background: #f7931e; */
+    background: #f7931e;
 }
 
 #header{
