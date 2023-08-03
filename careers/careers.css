@@ -42,6 +42,7 @@ body{
     background-size: cover;
     background-position: center;
     filter: brightness(50%);
+    position: fixed;
 }
 
 .heroText{
@@ -135,6 +136,7 @@ li{
 #body{
     position: relative;
     /* width: 100%; */
+    top: 100vh;
     min-height: 100%;
     background: #2e2d2c;
     display: flex;
@@ -211,6 +213,7 @@ h1{
 
 #footer{
     position: relative;
+    top: 100vh;
     background-color: #2e2d2c;
     max-width: 100%;
     display: flex;
