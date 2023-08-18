@@ -185,15 +185,54 @@ p{
     border-top: solid #f7931e;
 }
 
-.title{
+.row{
+    display: flex;
+    align-items: center;
+    border-bottom: solid #f7931e;
+    width: 100%;
+    height: 100vh;
+}
+
+#row1{
+    justify-content: left;
+    background: linear-gradient(60deg, #2e2d2c 60%, rgba(0,0,0,0.2) 40%), url('./media/brickwork.jpg');
+    background-size: cover;
+}
+
+#row2{
+    justify-content: right;
+    background: linear-gradient(-60deg, #2e2d2c 60%, rgba(0,0,0,0.2) 40%), url('./media/internal\ timber.jpeg');
+    background-size: cover;
+}
+
+#row3{
+    justify-content: left;
+    background: linear-gradient(60deg, #2e2d2c 60%, rgba(0,0,0,0.2) 40%), url('./media/glass-brick-extension.webp');
+    background-size: cover;
+}
+
+#text2{
+    align-items: flex-end;
+}
+
+.text{
+    width: 50%;
+    margin: 3vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading{
     /* text-decoration: underline 0.1vw; */
-    margin-bottom: 0;
-    margin-top: 10vw;
-    font-size: 6vw;
-    color: #2e2d2c;
+    width: fit-content;
+    margin: 0;
+    /* margin-top: 10vw; */
+    font-size: 5vw;
+    color: #f7931e;
+    /* -webkit-text-stroke: 1px #f7931e; */
     letter-spacing: 0.3vw;
-    background: #f6f6f6;
-    box-shadow: 1vw 0.5vw #f7931e;
+    /* background: #f6f6f6; */
+    /* box-shadow: 1vw 0.5vw #f7931e; */
     padding: 1vw;
     cursor: default;
 }
@@ -203,25 +242,31 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-    margin: 0;
-    width: 50%;
-    text-align: center;
-    font-size: 2vw;
+    height: fit-content;
+    margin-top: 3vw;
+    width: 40vw;
+    /* text-align: left; */
+    font-size: 1.2vw;
     color: white;
     cursor: default;
 }
 
+.para2{
+    text-align: right;
+}
+
 .img{
+    position: relative;
     width: 50%;
     min-height: 30vw;
-    box-shadow: 1vw 1vw #f7931e;
+    left: 0;
+    /* box-shadow: 1vw 1vw #f7931e; */
 }
 
 #img1{
     background: url('./media/house\ construcion.jpg');
     background-attachment: scroll;
-    background-attachment: -webkit-fixed;
+    /* background-attachment: -webkit-fixed; */
     background-size: cover;
     background-position: bottom;
 }
@@ -229,14 +274,18 @@ p{
 #img2{
     background: url('./media/extension\ window.webp');
     background-attachment: scroll;
-    background-attachment: -webkit-fixed;
+    /* background-attachment: -webkit-fixed; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
 }
 
-
 #img3{
+
+}
+
+
+#img4{
     background: url('./media/S\ STEEL.jpg');
     background-attachment: fixed;
     background-attachment: -webkit-fixed;
@@ -247,6 +296,10 @@ p{
     width: 100%;
     border-top: solid #f7931e;
     border-bottom: solid #f7931e;
+}
+
+.strip{
+    height: 30vw;
 }
 
 .servicesCallout{
