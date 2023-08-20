@@ -19,12 +19,12 @@ const hero = document.querySelector('#hero');
 const currentImg = document.querySelector('#currentImg');
 const nextImg = document.querySelector('#nextImg');
 const photoArray = [
-    './media/outside\ extension.jpg',
-    './media/house\ construcion.jpg',
-    './media/S\ STEEL.jpg',
-    './media/brickwork.jpg',
-    './media/kitchen-extension-internal.jpg',
-    './media/extension\ scaffold.jpeg'
+    './media/pexels-expect-best-323776.jpg',
+    './media/pexels-steffen-coonan-2098624.jpg',
+    './media/pexels-plastic-lines-17859113.jpg',
+    './media/pexels-pixabay-534220.jpg',
+    './media/pexels-expect-best-323772.jpg',
+    './media/pexels-pixabay-7931.jpg'
 ];
 const adjArray = ['INTEGRITY','TRANSPARENCY','HONESTY','EXPERIENCE','CARE','EXCELLENCE'];
 let i = 0;
