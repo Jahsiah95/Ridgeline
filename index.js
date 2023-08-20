@@ -70,3 +70,45 @@ function current(){
         }
     }, 10000)
 }
+
+//Scroll effects
+
+const text = document.querySelectorAll('.text')
+const img1 = document.querySelector('#img1')
+const img2 = document.querySelector('#img2')
+const img3 = document.querySelector('#img3')
+let height = window.innerHeight || document.documentElement.clientHeight;
+
+window.addEventListener('scroll', inView)
+
+text.forEach(text => {
+        text.style.opacity = 0;
+        text.style.transform = 'translate(0,20vh)';
+    });
+
+function inView(){
+    text.forEach(text => {
+        let distance = text.getBoundingClientRect().top;
+        if(distance <= height){
+            text.style.animation = 'moveText 1s forwards'
+        }
+    });
+
+    let distance1 = img1.getBoundingClientRect().top;
+    let distance2 = img2.getBoundingClientRect().top;
+    let distance3 = img3.getBoundingClientRect().top;
+
+    if(distance1 <= height){
+        img1.style.animation = 'moveImg 2s forwards'
+    }
+
+    if(distance2 <= height){
+        img2.style.animation = 'moveImg2 2s forwards'
+    }
+
+    if(distance3 <= height){
+        img3.style.animation = 'moveImg 2s forwards'
+    }
+};
+
+
