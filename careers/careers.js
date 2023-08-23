@@ -68,3 +68,27 @@ let jobCount = (function(){
 })();
 
 
+//toggle text
+const expand = document.querySelectorAll('#expand');
+const more = document.querySelectorAll('#more');
+const collapse = document.querySelectorAll('#collapse');
+
+(function showText(){
+    for(let i = 0; i < searchbar.vacancy.length; i++){
+        expand[i].addEventListener('click', () => {
+            more[i].style.display = 'block';
+            expand[i].style.display = 'none'
+            collapse[i].style.display = 'block';
+        })
+    }
+})();
+
+(function hideText(){
+    for(let i = 0; i < searchbar.vacancy.length; i++){
+        collapse[i].addEventListener('click', () => {
+            more[i].style.display = 'none';
+            expand[i].style.display = 'block'
+            collapse[i].style.display = 'none';
+        })
+    }
+})();

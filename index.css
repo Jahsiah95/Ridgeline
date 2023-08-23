@@ -259,7 +259,7 @@ p{
     height: 100%;
     background: linear-gradient(240deg, transparent 50%, #2e2d2c 50%), url('./media/housing\ estate.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: left;
 }
 
 #img2{
@@ -436,7 +436,7 @@ p > a{
     .para{
         height: 50vh;
         margin: 0;
-        width: 67%;
+        width: 100%;
         font-size: 2.5vh;
 
     }
