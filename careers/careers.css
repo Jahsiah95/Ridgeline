@@ -389,6 +389,24 @@ p > a{
         width: 100%;
     }
 
+    #expand{
+        width: 20vh;
+        height: 5vh;
+        font-size: 2vh;
+    }
+    
+    #collapse{
+        width: 20vh;
+        height: 5vh;
+        color: #f6f6f6;
+        font-size: 2vh;
+        font-weight: bold;
+        background: #f7931e;
+        border: none;
+        cursor: pointer;
+        display: none;
+    }
+
     #searchbar{
         width: 100%;
         height: 5vh;

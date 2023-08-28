@@ -77,6 +77,7 @@ const text = document.querySelectorAll('.text')
 const img1 = document.querySelector('#img1')
 const img2 = document.querySelector('#img2')
 const img3 = document.querySelector('#img3')
+const img2mob = document.querySelector('#img2-mob')
 let height = window.innerHeight || document.documentElement.clientHeight;
 
 window.addEventListener('scroll', inView)
@@ -97,6 +98,7 @@ function inView(){
     let distance1 = img1.getBoundingClientRect().top;
     let distance2 = img2.getBoundingClientRect().top;
     let distance3 = img3.getBoundingClientRect().top;
+    let distance2mob = img2mob.getBoundingClientRect().top;
 
     if(distance1 <= height){
         img1.style.animation = 'moveImg 2s forwards'
@@ -108,6 +110,10 @@ function inView(){
 
     if(distance3 <= height){
         img3.style.animation = 'moveImg 2s forwards'
+    }
+
+    if(distance2mob <= height){
+        img2mob.style.animation = 'moveImg2 2s forwards'
     }
 };
 

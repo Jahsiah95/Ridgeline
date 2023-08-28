@@ -433,6 +433,15 @@ p > a{
         padding: 2vh;
     }
 
+    .row{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-bottom: solid #f7931e;
+        width: 100%;
+        height: 100vh;
+    }
+
     .para{
         height: 50vh;
         margin: 0;
@@ -447,6 +456,117 @@ p > a{
         border-top: solid #f7931e;
         border-bottom: solid #f7931e;
         box-shadow: none;
+    }
+
+    #text2{
+        align-items: center;
+        text-align: center;
+    }
+    
+    .text{
+        width: 50%;
+        margin: 3vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 5vh;
+    }
+    
+    .heading{
+        width: fit-content;
+        margin: 0;
+        font-size: 5vw;
+        color: #f7931e;
+        letter-spacing: 0.3vw;
+        padding: 1vw;
+        cursor: default;
+    }
+    
+    
+    .para{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        margin-top: 3vw;
+        width: 60vw;
+        font-size: 2vh;
+        color: white;
+        cursor: default;
+    }
+    
+    .para2{
+        text-align: center;
+    }
+    
+    .img{
+        position: relative;
+        width: 50%;
+        min-height: 30vw;
+        left: 0;
+    }
+    
+    #img1{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: url('./media/housing\ estate.jpg');
+        background-size: cover;
+        background-position: left;
+    }
+    
+    #img2{
+        display: none;
+    }
+
+    #img2-mob{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: url('./media/internal\ timber.jpeg');
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #img3{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: url('./media/extension\ window.webp');
+        background-size: cover;
+        background-position: center;
+    }
+    
+    
+    #img4{
+        background: url('./media/S\ STEEL.jpg');
+        background-attachment: fixed;
+        -webkit-background-attachment: fixed;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-top: solid #f7931e;
+        border-bottom: solid #f7931e;
+    }
+    
+    .locations{
+        height: 30vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3vw;
+        padding: 2vh;
+    }
+    
+    .locations > p{
+        color: #f6f6f6;
+        font-size: 2vh;
+        cursor: default;
+        text-align: center;
     }
 
     .servicesCallout{
