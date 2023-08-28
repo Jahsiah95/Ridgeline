@@ -551,6 +551,16 @@ p > a{
         border-top: solid #f7931e;
         border-bottom: solid #f7931e;
     }
+
+    @keyframes moveImg{
+        from{transform: translate(100vw,0);}
+        to{transform: translate(0,0);}
+    }
+    
+    @keyframes moveImg2{
+        from{transform: translate(-100vw,0);}
+        to{transform: translate(0,0);}
+    }
     
     .locations{
         height: 30vw;
