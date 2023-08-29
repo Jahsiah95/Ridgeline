@@ -289,10 +289,6 @@ p{
 
 #img4{
     background: #2e2d2c;
-    /* background: url('./media/S\ STEEL.jpg');
-    background-attachment: fixed;
-    -webkit-background-attachment: fixed;
-    background-position: center; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,13 +323,7 @@ p{
     align-items: center;
     font-size: 1.5vw;
     font-weight: bold;
-    /* transition: background 0.2s; */
 }
-
-/* .servicesCallout:hover{
-    background: white;
-    color: #f7931e;
-} */
 
 #footer{
     position: relative;
@@ -345,7 +335,6 @@ p{
     align-items: center;
     text-align: center;
     color: white;
-    /* min-height: fit-content; */
     gap: 5vw;
     padding-top: 5vw;
     padding-bottom: 5vw;
@@ -360,10 +349,8 @@ p > a{
 }
 
 .socials{
-    /* width: 100%; */
     display: flex;
     justify-content:space-evenly;
-    /* gap: 1vw; */
     display: none;
 }
 
@@ -456,7 +443,6 @@ p > a{
         margin: 0;
         width: 100%;
         font-size: 2.5vh;
-
     }
     
     .img{
@@ -604,7 +590,6 @@ p > a{
     
     #footer{
         flex-direction: column;
-        /* min-height: 30vh; */
         padding: 5vh;
     }
     
