@@ -287,17 +287,6 @@ p{
 }
 
 
-#img4{
-    background: #2e2d2c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    border-top: solid #f7931e;
-    border-bottom: solid #f7931e;
-    animation-duration: 2s;
-}
-
 .locations{
     height: 30vw;
     display: flex;
@@ -311,6 +300,16 @@ p{
     color: #f6f6f6;
     font-size: 1.5vw;
     cursor: default;
+}
+
+#img4{
+    background: #2e2d2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-top: solid #f7931e;
+    border-bottom: solid #f7931e;
 }
 
 .servicesCallout{
@@ -538,17 +537,6 @@ p > a{
         animation-duration: 3s;
         opacity: 0;
     }
-    
-    
-    #img4{
-        background: #2e2d2c;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        border-top: solid #f7931e;
-        border-bottom: solid #f7931e;
-    }
 
     @keyframes moveImg{
         from{opacity: 0;}
@@ -561,13 +549,13 @@ p > a{
     }
     
     .locations{
-        height: 30vw;
+        height: 30vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 3vw;
-        padding: 2vh;
+        padding: 5vh;
     }
     
     .locations > p{
@@ -576,12 +564,23 @@ p > a{
         cursor: default;
         text-align: center;
     }
+        
+    #img4{
+        background: #2e2d2c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-top: solid #f7931e;
+        border-bottom: solid #f7931e;
+    }
 
     .servicesCallout{
         background: #f6f6f6;
         color: #f7931e;
-        width: 67%;
-        height: 10vh;
+        width: 100%;
+        height: 30vw;
+        margin: 0;
         display: flex;
         justify-content: center;
         align-items: center;
