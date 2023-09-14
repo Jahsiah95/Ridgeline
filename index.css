@@ -329,6 +329,11 @@ p{
     font-weight: bold;
 }
 
+.servicesCallout:hover{
+    background: #f7931e;
+    color: #f6f6f6;
+}
+
 #footer{
     position: relative;
     background-color: #2e2d2c;
