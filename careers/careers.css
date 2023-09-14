@@ -245,7 +245,6 @@ h1{
     display: inline-block;
     width: 0.5em;
     margin: 0;
-
 }
 
 .apply{
@@ -405,6 +404,18 @@ p > a{
         border: none;
         cursor: pointer;
         display: none;
+    }
+
+    .point::before{
+        justify-content: left;
+        left: 0;
+        content: "\25AA";
+        color: #f7931e;
+        font-size: 3vh;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin: 0;
     }
 
     #searchbar{

@@ -8,6 +8,7 @@ html{
     width: 100%;
     min-height: 100vh;
     font-family: Futura;
+    overflow-x: hidden;
 }
 
 body{
@@ -275,6 +276,10 @@ p{
     animation-fill-mode: forwards;
 }
 
+#img2-mob{
+    display: none;
+}
+
 #img3{
     position: relative;
     width: 100%;
@@ -517,6 +522,7 @@ p > a{
     }
 
     #img2-mob{
+        display: block;
         position: relative;
         width: 100%;
         height: 100%;
